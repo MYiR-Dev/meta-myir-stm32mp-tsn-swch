@@ -39,7 +39,7 @@ st_configure() {
     wait_sysfs $SOC_PATH/$IP_REF_NAME/net/sw0p3/phy/mdiobus
     if [ -e $SOC_PATH/$IP_REF_NAME/net/sw0p3/phy/mdiobus ]; then
         echo -n stmmac-1:04 > $SOC_PATH/$IP_REF_NAME/net/sw0p3/phy/mdiobus
-        echo -n stmmac-1:05 > $SOC_PATH/$IP_REF_NAME/net/sw0p2/phy/mdiobus
+        echo -n stmmac-1:06 > $SOC_PATH/$IP_REF_NAME/net/sw0p2/phy/mdiobus
     else
         echo "[ERROR]: $SOC_PATH/$IP_REF_NAME/net/sw0p3/phy/mdiobus not available"
         echo ""
